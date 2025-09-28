@@ -1,7 +1,7 @@
                                                                     Task Manager (Laravel + Blade + AJAX)
 A Task Management module built with Laravel 10, where users can dynamically add multiple tasks on the same page using a repeater field and submit them together without reloading the page (AJAX based).
 
-                                                                                  Features
+                                                                            Features
                                                                                   
 Add multiple tasks dynamically with repeater input fields.
 
@@ -15,7 +15,7 @@ Frontend built using Blade template + Bootstrap 5.
 
 Clean separation of CSS, JS, Blade files for maintainability.
 
-                                                                                 Tech Stack
+                                                                            Tech Stack
 
 Backend: Laravel 10 (PHP 8+)
 
@@ -25,7 +25,7 @@ Database: MySQL
 
 AJAX: Vanilla JS (Fetch API)
 
-                                                                            Setup Instructions
+                                                                        Setup Instructions
 Clone the Repository
 git clone <>
 cd Task-Assignment
@@ -53,7 +53,7 @@ Serve the Application
 php artisan serve
 Visit: http://127.0.0.1:8000
 
-Project Structure
+                                                              Project Structure
 Task-App/
 │
 ├── app/Http/Controllers/TaskController.php   
@@ -66,9 +66,18 @@ Task-App/
 ├── resources/views/tasks.blade.php           
 ├── routes/web.php                           
 │
-└── README.md
+└── README.md 
 
-                                                                              How It Works
+                                                             API Documentation (Postman)
+
+You can test the API using Postman.  
+Import the collection file [postman_collection.json](./postman_collection.json) directly into Postman.
+
+It contains sample requests for:
+- Creating multiple tasks
+
+
+                                                                 How It Works
 
 User clicks “+ Add Task” → new task input row is added dynamically.
 
@@ -91,4 +100,5 @@ Frontend can easily be migrated to Vue/React if needed.
                                                                         License
 
 This project is licensed under the MIT License.
+
 
