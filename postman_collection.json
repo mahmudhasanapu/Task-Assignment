@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "6461e4e6-4c62-4162-8c9c-fca872ef5827",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47276919",
+		"_collection_link": "https://mahmud-hasan-apu23-5815287.postman.co/workspace/Mahmud-Hasan's-Workspace~fc3680c5-d2cb-442b-8cf7-2161272f68f9/collection/47276919-6461e4e6-4c62-4162-8c9c-fca872ef5827?action=share&source=collection_link&creator=47276919"
+	},
+	"item": [
+		{
+			"name": "Task-Assignment",
+			"item": [
+				{
+					"name": "task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tasks\": [\r\n    {\r\n      \"title\": \"Task 1\",\r\n      \"description\": \"Will start\",\r\n      \"status\": \"pending\"\r\n    },\r\n    {\r\n      \"title\": \"Task 2\",\r\n      \"description\": \"Doing my work\",\r\n      \"status\": \"in_progress\"\r\n    },\r\n    {\r\n      \"title\": \"Task 3\",\r\n      \"description\": \"Done my work\",\r\n      \"status\": \"completed\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks/multiple",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"multiple"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
